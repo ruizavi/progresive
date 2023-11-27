@@ -10,5 +10,5 @@ export default defineConfig({
 	minify: true,
 	cjsInterop: true,
 	platform: "node",
-	outDir: "dist/redo",
+	outDir: "dist/progresive",
 });

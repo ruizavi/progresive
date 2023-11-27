@@ -12,14 +12,14 @@
     "type": "git",
     "url": "git+https://github.com/ruizavi/progresive.git"
   },
-  "main": "./redo/index.cjs",
-  "module": "./redo/index.js",
-  "typings": "./redo/index.d.cts",
+  "main": "./dist/progresive/index.cjs",
+  "module": "./dist/progresive/index.js",
+  "typings": "./dist/progresive/index.d.cts",
   "exports": {
     ".": {
-      "import": "./redo/index.js",
-      "require": "./redo/index.cjs",
-      "types": "./index.d.cts"
+      "import": "./dist/progresive/index.js",
+      "require": "./dist/progresive/index.cjs",
+      "types": "./dist/progresive/index.d.cts"
     }
   },
   "files": [
@@ -27,8 +27,7 @@
     "README"
   ],
   "scripts": {
-    "prepublishOnly": "npm run build && npm run move",
-    "move": "cp package.json dist/package.json && cp README.md dist/README.md",
+    "prepublishOnly": "npm run build",
     "build": "tsup",
     "start:dev": "tsnd --respawn src/main.ts",
     "lint": "npx @biomejs/biome lint src",
