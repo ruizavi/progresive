@@ -4,6 +4,10 @@
   "author": "Avi (Victor Ruiz)",
   "description": "Abstraction Module For Express/Typescript",
   "type": "module",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ruizavi/redo.git"
