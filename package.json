@@ -1,5 +1,5 @@
 {
-  "name": "redo",
+  "name": "progresive",
   "version": "1.0.0",
   "author": "Avi (Victor Ruiz)",
   "description": "Abstraction Module For Express/Typescript",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ruizavi/redo.git"
+    "url": "git+https://github.com/ruizavi/progresive.git"
   },
   "main": "./redo/index.cjs",
   "module": "./redo/index.js",
