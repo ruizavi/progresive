@@ -1,32 +1,25 @@
 function IntegerParser(data: any) {
-  return parseInt(data);
+	return Number(data);
 }
 
 function StringParser(data: any) {
-  return String(data);
+	return String(data);
 }
 
 function BooleanParser(data: any) {
-  return Boolean(data);
+	return Boolean(data);
 }
 
 function DateParser(data: any) {
-  return new Date(data);
+	return new Date(data);
 }
 
 function ArrayParser(data: any) {
-  return data.split(",");
+	return data.split(",");
 }
 
 function FloatParser(data: any) {
-  return parseFloat(data);
+	return Number(data);
 }
 
-export {
-  ArrayParser,
-  BooleanParser,
-  DateParser,
-  FloatParser,
-  IntegerParser,
-  StringParser,
-};
+export { ArrayParser, BooleanParser, DateParser, FloatParser, IntegerParser, StringParser };
