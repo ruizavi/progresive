@@ -1,6 +1,6 @@
 {
   "name": "progresive",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Avi (Victor Ruiz)",
   "description": "Abstraction Module For Express/Typescript",
   "type": "module",

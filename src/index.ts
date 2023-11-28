@@ -12,7 +12,7 @@ import {
 	StringParser,
 } from "./decorators/middleware/parser";
 import Policy from "./decorators/middleware/policy";
-import Redo from "./redo";
+import Progresive from "./progresive";
 
 export {
 	ArrayParser,
@@ -31,9 +31,9 @@ export {
 	Patch,
 	Policy,
 	Post,
+	Progresive,
 	Put,
 	Query,
-	Redo,
 	StringParser,
 	User,
 };

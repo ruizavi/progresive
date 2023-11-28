@@ -19,12 +19,12 @@ import {
 import ErrorCatch from "./error-catch";
 import { HttpMethod, RouteGuardian, RouteInterceptor, RoutePolicy } from "./types";
 
-class InternalRedo {
-	declare dir: string;
-	declare prefix: string;
-	declare port: number;
-	declare instance: ExpressApplication;
-	declare controllers: Record<string, any>;
+class InternalProgresive {
+	protected declare dir: string;
+	protected declare prefix: string;
+	protected declare port: number;
+	protected declare instance: ExpressApplication;
+	protected declare controllers: Record<string, any>;
 
 	private defineConfig() {
 		this.instance.use(express.urlencoded({ extended: true }));
@@ -143,7 +143,7 @@ class InternalRedo {
 	}
 }
 
-interface ConfigRedo {
+interface ConfigProgresive {
 	addGlobalPrefix(prefix: string): void;
 	useMorgan(mode: string): void;
 	usePassport(path: string): void;
@@ -155,7 +155,7 @@ interface ConfigRedo {
 	start(): void;
 }
 
-class RedoOptions extends InternalRedo implements ConfigRedo {
+class ProgresiveOptions extends InternalProgresive implements ConfigProgresive {
 	setStatic(path: string): void {
 		this.instance.use(express.static(path));
 	}
@@ -195,12 +195,12 @@ class RedoOptions extends InternalRedo implements ConfigRedo {
 	}
 }
 
-class Redo extends RedoOptions {
-	create(port: number): ConfigRedo {
+class Progresive extends ProgresiveOptions {
+	create(port: number): ConfigProgresive {
 		this.port = port;
 		this.instance = express();
 		return this;
 	}
 }
 
-export default Redo;
+export default Progresive;
