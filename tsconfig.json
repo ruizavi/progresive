@@ -14,8 +14,13 @@
     "allowJs": false,
     "outDir": "dist",
     "declaration": true,
-    "baseUrl": "src"
+    "baseUrl": ".",
+    "paths": {
+      "@progresive/common": ["./src/common"],
+      "@progresive/common/*": ["./src/common/*"],
+      "@progresive/core": ["./src/core"],
+      "@progresive/core/*": ["./src/core/*"],
+    }
   },
-  "include": ["src/**/*", "package.json", "README.md"],
-  "exclude": ["node_modules"]
+  "include": ["src/**/*", "package.json", "README.md", "integrations/**/*"],
 }
