@@ -1,9 +1,8 @@
 {
   "name": "progresive",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "author": "Avi (Victor Ruiz)",
   "description": "Abstraction Module For Express/Typescript",
-  "type": "module",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
@@ -51,6 +50,7 @@
     "lint-staged": "^15.1.0",
     "ts-node-dev": "^2.0.0",
     "tsup": "^8.0.1",
+    "tsx": "^4.6.2",
     "typescript": "^5.3.2"
   },
   "dependencies": {
